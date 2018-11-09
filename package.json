@@ -1,5 +1,5 @@
 {
-  "name": "empty-project-template",
+  "name": "boba-explosion",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "expo": "^31.0.2",
+    "matter-js": "^0.14.2",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react-native-game-engine": "^0.10.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
