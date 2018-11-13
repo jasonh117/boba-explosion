@@ -1,21 +1,25 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+import { StyleSheet, Text } from 'react-native';
+import { Loop, Stage, World } from 'react-game-kit/native';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  loop: {
+    backgroundColor: '#000',
+  },
+  stage: {
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  txt: {
+    color: '#000',
   },
 });
+
+export default () => (
+  <Loop style={styles.loop}>
+    <Stage style={styles.stage}>
+      <World>
+        <Text style={styles.txt}>hue</Text>
+      </World>
+    </Stage>
+  </Loop>
+);
